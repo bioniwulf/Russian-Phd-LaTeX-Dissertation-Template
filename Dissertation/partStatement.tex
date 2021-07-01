@@ -1,4 +1,7 @@
 \chapter{Обзор современных подходов к решению задачи управления ДРК ПА} \label{ch:Statement}
+\begin{noteplan}
+    Тут сейчас полное повторение статьи в ПИР. Вроде это не запрещено. Чуть попозже часть разделов наверное переформатирую.
+\end{noteplan}
 \section{Формулировка задачи управления ДРК ПА}\label{sec:Statement/ProblemStatement}
 Пусть динамика подводного аппарата, оснащенного избыточным ДРК, определена в формулировках метода пространства состояний следующим образом:
 \begin{equation}
@@ -46,7 +49,7 @@
 
 \begin{gather}
     \min \int_0^{\infty} \left[ q(x) + \nu^T R_{\nu}(x) \nu \right] dt \\
-    \min \left( ||Q_s|| + J(\vect{x}, \vect{u}, t) \right) \\
+    \min \left( ||Q_s|| + J(\vect{x}, \vect{u}, t) \right) \label{eq:Statement/AllocationProblem} \\
     \text{при условии } \vect{\nu}-B(\vect{x})\vect{u} = \vect{s}, u \in \mathspace{U} \notag
 \end{gather}
 \noindent где:
@@ -270,6 +273,9 @@
 \end{itemize}
 
 \section{Особенности отказоустойчивых методов управления ДРК}\label{sec:Propulsion/FaultToulerant}
+\begin{noteplan}
+    Тут будет потом про обзор про отказоустойчивость на уровне управления ДРК. Таких статей достаточно много.
+\end{noteplan}
 
 \section{Постановка цели и задач исследования}\label{sec:Statement/SetProblems}
 
