@@ -11,6 +11,12 @@
 % Пакет что бы можно было делать матрицы с фиксированной шириной столбцов
 \usepackage{nicematrix}
 
+% Нужно для alert блоков из beamer
+\PassOptionsToPackage{svgnames}{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
 %%% Микротипографика
 %\ifnumequal{\value{draft}}{0}{% Только если у нас режим чистовика
 %    \usepackage[final, babel, shrink=45]{microtype}[2016/05/14] % улучшает представление букв и слов в строках, может помочь при наличии отдельно висящих слов

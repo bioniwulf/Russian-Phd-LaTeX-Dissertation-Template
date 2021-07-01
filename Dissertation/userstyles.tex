@@ -315,3 +315,19 @@
 
 % Красивая запись пространств 
 \newcommand{\mathspace}[1]{\mathbb{#1}}
+
+\newenvironment{noteplan}{
+    \tcolorbox[beamer,
+    noparskip,breakable,
+    colback=LimeGreen,
+    colbacklower=LimeGreen!75!LimeGreen,
+    title=В планах]}
+    {\endtcolorbox}
+
+\newenvironment{notequestion}{
+    \tcolorbox[beamer,
+    noparskip,breakable,
+    colback=Red,
+    colbacklower=Red!75!Red,
+    title=Вопрос]}
+    {\endtcolorbox}
